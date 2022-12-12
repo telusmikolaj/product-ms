@@ -1,0 +1,22 @@
+
+server:
+  port: 8082
+spring:
+  application:
+    name: product-service
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: root
+      database: order-service
+      port: '27017'
+      host: localhost
+
+  rabbitmq:
+    addresses: localhost:5672
+
+rabbitmq:
+  queue:
+    product: product.queue
+
